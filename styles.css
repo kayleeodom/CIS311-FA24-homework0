@@ -1,0 +1,50 @@
+/* 
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%) */
+
+:root {
+    --primary-800: hsl(217, 19%, 35%);
+    --primary-500: hsl(214, 17%, 51%);
+    --primary-300: hsl(212, 23%, 69%);
+    --primary-100: hsl(210, 46%, 95%);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    color: var(--primary-800);
+    font-family: Manrope, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 16px);
+}
+
+.card {
+    display: flex;
+
+    max-width: 730px;
+}
+
+.person-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-text-container {
+    display: flex;
+}
