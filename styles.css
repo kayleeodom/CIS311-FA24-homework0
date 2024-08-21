@@ -36,9 +36,43 @@ body {
 
 .card {
     display: flex;
-
     max-width: 730px;
+    border-radius: 1rem;
+    border: 1px solid coral;
+    overflow: hidden;
 }
+
+.image-container {
+    width: 40%;
+    background-color: darkcyan;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    width: 60%;
+}
+
+@media screen and (max-width:800px) {
+    .card {
+        flex-direction: column;
+        max-width: 470px;
+    }
+
+    .image-container{
+        width: 100%;
+        height: 280px;
+    }
+    .text-container {
+        width: 100%;
+    }
+}
+
+
 
 .person-info-container {
     display: flex;
@@ -47,4 +81,19 @@ body {
 
 .image-text-container {
     display: flex;
+}
+
+
+.share-container {
+    background-color: var(--primary-800);
+    color: var(--primary-100);  
+}
+
+.share-link span {
+    padding-inline: 1rem;
+}
+
+.share-link {
+    display: flex;
+    gap: 20px;
 }
